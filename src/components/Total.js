@@ -9,4 +9,11 @@ const Total = props => {
   );
 };
 
-export default connect(null, {})(Total);
+const mapStateToProps = state => {
+  return {
+    image: state.price,
+    additionalPrice: state.additionalPrice,
+  }
+}
+
+export default connect(mapStateToProps, {})(Total);
