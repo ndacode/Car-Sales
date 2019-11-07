@@ -12,7 +12,7 @@ function reducer () {
   }
 }
 
-const store = createStore(reducer);
+export const store = createStore(reducer);
 
 const App = () => {
   const state = {
