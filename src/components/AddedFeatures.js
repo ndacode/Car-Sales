@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { removeFeature } from './actions/Actions'
+import { removeFeature } from '../actions/Actions'
 import AddedFeature from './AddedFeature';
 
 
@@ -10,6 +10,7 @@ const AddedFeatures = props => {
     e.preventDefault();
     removeFeature(props.item)
   }
+
 
   return (
     <div className="content">

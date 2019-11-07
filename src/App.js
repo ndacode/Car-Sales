@@ -1,18 +1,15 @@
 import React from 'react';
 import { createStore } from 'redux';
+import { BUY_ITEM } from './actions/Actions';
 import Header from './components/Header';
 import AddedFeatures from './components/AddedFeatures';
 import AdditionalFeatures from './components/AdditionalFeatures';
 import Total from './components/Total';
+import { reducer } from './reducers/reducer';
 
 
-function reducer () {
-  return {
-    title: "Reducer"
-  }
-}
 
-export const store = createStore(reducer);
+ export const store = createStore(reducer);
 
 const App = () => {
   const state = {
