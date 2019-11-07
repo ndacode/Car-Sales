@@ -44,10 +44,10 @@ const App = () => {
     <div className="boxes">
       <div className="box">
         <Header car={state.car} />
-        <AddedFeatures car={state.car} />
+        <AddedFeatures car={state.car} removeFeature={removeFeature} />
       </div>
       <div className="box">
-        <AdditionalFeatures additionalFeatures={state.additionalFeatures} />
+        <AdditionalFeatures additionalFeatures={state.additionalFeatures} buyItem={state.buyItem}/>
         <Total car={state.car} additionalPrice={state.additionalPrice} />
       </div>
     </div>

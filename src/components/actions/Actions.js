@@ -3,15 +3,15 @@ export const BUY_ITEM = 'BUY_ITEM';
 export const buyItem = () => item => {
     return {
         type: BUY_ITEM,
-        paypload: payload
+        // paypload: payload
     }
 }
 
-export const REMOVE_ITEM = "REMOVE_ITEM";
+export const REMOVE_FEATURE = "REMOVE_FEATURE";
 
-export const removeItem = () => item => {
+export const removeFeature = () => item => {
     return {
-        type: REMOVE_ITEM,
-        payload: payload
+        type: REMOVE_FEATURE,
+        // payload: payload
     }
 }
