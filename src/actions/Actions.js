@@ -10,9 +10,6 @@ export const buyItem = item => {
         payload: item
     }
 };
-
-
-
 export const removeFeature = item => {
     return {
         type: REMOVE_FEATURE,
